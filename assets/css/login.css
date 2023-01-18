@@ -14,8 +14,8 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
-    margin-top: 25px;
-    background-image: url(https://lh3.googleusercontent.com/UfSK7CdYtfJmaGZm2kxvGBII9Cae3m2-RJV7gVAF6m7bv_r3v8cKnGZWoO98xpBpLvef832n92020xSav5rcmMZYEkPGLyJDASvRncbzzR98a7AQJqTS7JL75sLHeMzkgOyueg0tCBTy_gAVKtw5rgrDEP13df8VgL1cEw1Iqt9m8aXebkeMKP3JUoQY0g1ja0ihxoTPZrvsYbAzF6V5gxowt5n-Y4xjywMK1CGO0RTDl0dXanu5fLRhRhfJOsj7JR5TFiX1LWv1JB7r1h8NJtKH6Wb388s3HLHoCUh6WyJXkT7HOusRvkG6jNgUQu9sz_ibaVKYefGOPuVSB-c3uREVN-SNtg1ferJ1fgdXYqVaB8B2dK90aVWmamADonJWhIndt7lIPWC2BFHmlAEleyujMX1gxJVHCmhlAScEtD7KNTfqjmQ1KJk-CGhi-B6GMF7pxtmQPDZWgvW58D3c5jxtXNn1Z-eN59WXF1Dy07SZ189qS-Eq9BNalc_qoTaFh3d_ZlCwaT7DRHZ9q0ANaxTJCDezO2oNad9HlzLzyKsPxLhTHaY7Y_SvBAPr2CdU_QjKOGwlByH75ieLJ0INpGq5cS_26scW8vuAz4-Qjs3rGC1Jpx-ef5A9Pj-6AMyKahM2K9M1j0gC_iD0r2N2pUJ6rCaU1hxDroxFOkVeFSW-BgKuEJIOgCYtDeqO_LyjA7c-1NcTy_JHmDU37xUfDvOXUOvN0xc5TDbnR9cyCqyGXORDViAo9kgf-0eNZi_VuA5OHCWZzOPBxRVJhf2XCKH_IoWJC5g3RswFoknwugKS18bYmWRjIdcDt7aX0uoqri8-OE5CJm7Um04palYyGMdtGbw2m3Us54umz6-6HdpeI8mzEuXnntnY_1w_9WJ0GkoBLFfqeGnWWQ-8Uaj37Xy7bpUAFvbXLu-NqtJm3O9vPR4sjP144_qXZ1c-y-cOWJAHlVlqUPuR_BgMtmhui0gdbeF9MNebLvbYsHM4q-a2jQ=w1612-h948-no?authuser=0);
+    margin-top: 80px;
+    background-image: url(https://wallpapercave.com/wp/wp11393685.jpg);
 	background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.9;
@@ -105,7 +105,7 @@ input {
 	overflow: hidden;
 	width: 768px;
 	max-width: 100%;
-	min-height: 480px;
+	min-height: 450px;
 }
 
 .form-container {
