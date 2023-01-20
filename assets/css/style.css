@@ -772,33 +772,183 @@ body {
   border: solid pink 1.5px;
 }
 
+/* --------------------------------SLIDE------------------------------------ */
 
-#slideshow {
-  overflow: hidden;
-  height: 300px;
-  width: 500px;
-  margin: 0 auto;
+.slider {
+	width: 52%;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto;
+	max-width:800px
+}
+/* Basic appearance stuff ends here */
+
+/* Parallax Horizontal Scroller - by Bree Dulmage, 25 */
+#proparallax {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	min-height: 25rem;
+	/* box-shadow: 0px 8px 10px 8px grey; */
+}	
+
+#proparallax img {
+	position: absolute;
+	width: 50rem;
+	height: 25rem;
+	overflow: hidden;
+	object-fit: scale-down;
 }
 
-.slide-wrapper {
-  width: 2912px;
-  -webkit-animation: slide 14s ease infinite;
+@keyframes parallax_one { /* controls img.one movement */
+	0% { /* .imageloaded */
+		height: 25rem;
+		width: 50rem;
+		left: 0rem;
+		opacity: 1;
+	}
+	/* .imagehold runs from 0 to 27.77% */
+	27.77% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	27.78% { /* .imagepreunload */
+		width: 50rem;
+		left: 0rem;
+		right: 50rem;
+	}
+	33.33% { /* .imageunloaded */
+		height: 25rem;
+		width: 0rem;
+		left: 0rem;
+		right: 0rem;
+		opacity: 1;
+	}
+	33.34% { /* imageoff */
+		opacity: 0;	
+	}
+	94.43% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	94.44% { /* .imageinitial */
+		height: 25rem;
+		width: 0rem;
+		left: 50rem;
+		opacity: 1;
+	}
+	100% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+		opacity: 1;		
+	}
 }
 
-.slide img{
-  margin-top: .2%;
-  float: left;
-  height: 300px;
-  width: 500px;
+@keyframes parallax_two { /* controls img.two movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	27.77% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	27.78% { /* .imageinitial */
+		width: 0rem;
+		height: 25rem;
+		left: 50rem;
+		opacity: 1;
+	}
+	33.33% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	/* .imagehold runs from 33.34% - 61.10% */
+	61.10%{ /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	61.11% { /* .imagepreunload */
+		width: 50rem;
+		left: 0rem;
+		right: 50rem;
+	}
+	66.67% { /* .imageunloaded */
+		width: 0rem;
+		right: 0rem;
+		left: 0rem;
+		height: 25rem;
+		opacity: 1;
+	}
+	66.68% { /* .imageoff */
+		opacity: 0;
+	}
+	100% { /* .imageoff */
+		opacity: 0;
+	}
 }
 
+@keyframes parallax_three { /* controls img.three movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	61.10%{ /* .imageon */
+		opacity: 0;
+	}
+	61.11% { /* .imageinitial */
+		width: 0rem;
+		height: 25rem;
+		left: 50rem;
+		opacity: 1;		
+	}
+	66.67% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	/* .imagehold runs from 66.67% - 94.43% */
+	94.43% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	94.44% { /* .imagepreunload */
+		width: 50rem;
+		left: 0rem;
+		right: 50rem;
+	}
+	100% { /* imageunloaded */
+		width: 0rem;
+		right: 0rem;
+		left: 0rem;
+		height: 25rem;
+		opacity: 1;
+	}
+}
 
-@-webkit-keyframes slide {
-  20% {margin-left: 0px;}
-  30% {margin-left: -500px;}
-  50% {margin-left: -500px;}
-  60% {margin-left: -1000px;}
-  80% {margin-left: -1000px;}
+#proparallax img.one{
+	animation-name: parallax_one; /* controls img.one movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.two {
+	animation-name: parallax_two; /* controls img.two movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.three {
+	animation-name: parallax_three; /* controls img.three movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
 }
 
 /* --------------------------------CONTINUE------------------------------------ */
